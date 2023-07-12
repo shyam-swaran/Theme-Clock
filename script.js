@@ -12,11 +12,11 @@ theme.addEventListener("click",()=>{
     if(theme.textContent=="Dark Mode"){
         root.classList.toggle("dark");
         theme.innerText="Light Mode";
-        bg.style.clipPath="circle(150% at 50% 8%)";
+        bg.style.clipPath="circle(100% at 50% 50%)";
     }else{
         root.classList.toggle("dark");
         theme.innerText="Dark Mode";
-        bg.style.clipPath="circle(0% at 50% 8%)";
+        bg.style.clipPath="circle(0% at 50% 50%)";
     }
 });
 function time() {
