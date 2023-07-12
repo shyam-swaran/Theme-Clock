@@ -6,14 +6,17 @@ const secondHand=document.getElementById("second");
 const timewhole=document.getElementById("time");
 const dateWhole=document.getElementById("date-whole");
 const theme =document.getElementById("theme");
+const bg =document.getElementById("bg-color");
 const root =document.documentElement;
 theme.addEventListener("click",()=>{
     if(theme.textContent=="Dark Mode"){
         root.classList.toggle("dark");
         theme.innerText="Light Mode";
+        bg.style.clipPath="circle(150% at 50% 8%)";
     }else{
         root.classList.toggle("dark");
         theme.innerText="Dark Mode";
+        bg.style.clipPath="circle(0% at 50% 8%)";
     }
 });
 function time() {

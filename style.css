@@ -20,7 +20,16 @@ body{
     align-items: center;
     justify-content: center;
     font-family:Poppins;
-    background-color: var(--background);
+}
+#bg-color{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    clip-path: circle(0% at 50% 8%);
+    z-index: -1;
 }
 .clock-conatiner{
     display: flex;
